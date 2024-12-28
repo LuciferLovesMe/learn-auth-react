@@ -5,6 +5,8 @@ import Users from "./pages/Users";
 import Products from "./pages/Products";
 import AddUser from "./pages/AddUser";
 import EditUser from "./pages/EditUser";
+import AddProducts from "./pages/AddProducts";
+import EditProducts from "./pages/EditProducts";
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/users/add" element={<AddUser />} />
           <Route path="/users/edit" element={<EditUser />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/add" element={<AddProducts />} />
+          <Route path="/products/edit" element={<EditProducts />} />
         </Routes>
       </BrowserRouter>
     </div>
