@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         <div className="column is-2">
           <Sidebar />
         </div>
-        <div className="column has-background-light">
+        <div className="column has-background-dark">
           <main>{children}</main>
         </div>
       </div>
