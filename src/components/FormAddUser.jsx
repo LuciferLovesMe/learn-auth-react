@@ -24,7 +24,7 @@ const FormAddUser = () => {
       navigate("/users");
     } catch (error) {
       if (error.response) {
-        setMsg(error.response.msg);
+        setMsg(error.response.data.msg);
       }
     }
   };

@@ -36,7 +36,7 @@ const FormEditProducts = () => {
       navigate("/products");
     } catch (error) {
       if (error.response) {
-        setMsg(error.response.msg);
+        setMsg(error.response.data.msg);
       }
     }
   };
